@@ -27,7 +27,7 @@ Congrats, you now have a serverless function that says your table has been booke
 ## Lab 3: Call a serverless function from your Assistant
 
 Now, you've got a bit of chatbot and a bit of serverless function... let's connect them together! 
-INSERT GIPHY.gif
+![FUSION](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/giphy.gif?raw=true)
 
 **Retrieve your Cloud Function service credentials**
 
@@ -48,9 +48,9 @@ INSERT GIPHY.gif
 
 1. Head back to the Dialog tab of your chatbot workspace
 2. Add your Cloud Function credentials as a context variable named `$private.my_credentials`:
-INSERT BOT0.gif
+![botzero](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot0.gif?raw=true)
 3. Edit the response of the book_reservation node using the JSON editor
-INSERT BOT1.gif
+![botone](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot1.gif?raw=true)
 4. Replace with the following code snippet:
 ```json
 {
@@ -84,7 +84,7 @@ Then we're saving the return from the function in the `$my_input_returned` conte
 To check whether the call went through let's try to display the returned text.
 
 5. Add a child node to the book_reservation node and set its condition to true 
-INSERT BOT2.gif
+![bottwo](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot2.gif?raw=true)
 6. Edit the response using the JSON editor and add the following code that will retrieve the result from the function and display it:
 ```json
 {
@@ -98,7 +98,7 @@ INSERT BOT2.gif
 }
 ```
 7. Open the book_reservation node and change the "And finally" condition to "Skip user input" so it automatically goes to the child node
-INSERT BOT3.gif
+![botthree](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot3.gif?raw=true)
 8. Try it out! 
 
 Great! You've just mixed two worlds together, how does it feel? 
