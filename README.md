@@ -2,8 +2,8 @@
 
 ## Lab 1: Create a Watson Assistant dialog
 
-In this first lab, you'll create the base conversation for the workshop. We'll use the use case of booking a restaurant through a chatbot. 
-- If you feel like creating your own conversation, start [**here - Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
+In this first lab, you'll create the base conversation for the workshop. We'll follow the use case of booking a restaurant through a chatbot:
+- If you feel like creating your own conversation, start on [**Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
 - If you'd rather follow an example go straight to [**Step 2**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
 
 Come back here when you're done!
