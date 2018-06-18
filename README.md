@@ -3,16 +3,22 @@
 ## Lab 1: Create a Watson Assistant dialog
 
 In this first lab, you'll create the base conversation for the workshop. We'll use the use case of booking a restaurant through a chatbot. 
-If you feel like creating your own conversation, start on [**Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot), if not go straight to [**Step 2**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
-- [Introduction to Watson Conversation](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md)
+- If you feel like creating your own conversation, start [**here - Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
+- If you'd rather follow an example go straight to [**Step 2**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
+
+Come back here when you're done!
 
 Bravo! You've created a chatbot that pretends to make a reservation for you.
-Let's now see how to call external services that would actually do the booking.
+Let's now see how to create a serverless function that you'll be able to call from your workspace.
 
 ## Lab 2: Create a basic serverless function
 
+You should now have a conversation workspace asking the user information about booking a table at a restaurant. If not, make sure that you've followed the first lab.
 Following on this workshop you will see how to call serverless functions directly from the Watson Assistant service. 
 This will allow the conversation to be driven by the service rather than having to create a middleware app that handles redirections to other services based on the intents detected.
+
+**Apply a feature code for your account**
+Before starting this lab, ask your instructor for a feature code that will unlock 
 
 1. Go to your [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps)
 2. Click on the hamburger menu on the top-left and select "Functions"
@@ -163,4 +169,5 @@ The four first parameters are from what you've gathered during the conversation,
 
 Did the light turn your color? If yes, celebrate! If no, let us know and we'll help you achieve it. 
 
-## Lab 5 (bonus): Digressions
+## Lab 5 (bonus challenge!): Digressions
+
