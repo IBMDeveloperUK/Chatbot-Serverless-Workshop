@@ -173,5 +173,5 @@ Did the light turn your color? If yes, celebrate! If no, let us know and we'll h
 
 If you've managed to finish the workshop in time (well done!) and feel courageous, with the knowledge you've acquired from the previous steps, add a new dialog node making a call to the weather API and allow the user to digress to it from the book_table node.
 Here are some links that will be useful to complete this challenge: 
-[Tutorial on digressions](https://console.bluemix.net/docs/services/conversation/tutorial-digressions.html#tutorial-digressions)
-[Example call to the weather openwhisk package](https://console.bluemix.net/docs/services/conversation/dialog-actions.html#advanced-action-server-example)
+- [Tutorial on digressions](https://console.bluemix.net/docs/services/conversation/tutorial-digressions.html#tutorial-digressions)
+- [Example call to the weather openwhisk package](https://console.bluemix.net/docs/services/conversation/dialog-actions.html#advanced-action-server-example)
