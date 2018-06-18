@@ -2,8 +2,8 @@
 
 ## Lab 1: Create a Watson Assistant dialog
 
-In this first lab, you'll create the base conversation for the workshop. We'll follow the use case of booking a restaurant through a chatbot:
-- If you feel like creating your own conversation, start on [**Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
+In this first lab, you'll create the base conversation for the workshop. We'll use the use case of booking a restaurant through a chatbot. 
+- If you feel like creating your own conversation, start [**here - Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
 - If you'd rather follow an example go straight to [**Step 2**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
 
 Come back here when you're done!
@@ -79,14 +79,14 @@ Now, you've got a bit of chatbot and a bit of serverless function... let's conne
         "food_type": "$cuisine"
       },
       "credentials": "$private.my_credentials",
-      "result_variable": "context.my_input_returned"
+      "result_variable": "context.function_returned"
     }
   ]
 }
 ```
 NB. Be sure to replace `Namespace`, `PackageName`, `ActionName` by your values.
 Here, we're changing the text sent back to the users and then telling the service where is the serverless action located and calling it with the values set by the user as parameters.
-Then we're saving the return from the function in the `$my_input_returned` context variable
+Then we're saving the return from the function in the `$function_returned` context variable
 To check whether the call went through let's try to display the returned text.
 
 5. Add a child node to the book_reservation node and set its condition to true 
@@ -97,7 +97,7 @@ To check whether the call went through let's try to display the returned text.
   "output": {
     "text": {
       "values": [
-        "Your input was: $my_input_returned."
+        "The function returned: $function_returned."
       ]
     }
   }
