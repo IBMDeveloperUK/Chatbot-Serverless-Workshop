@@ -143,9 +143,7 @@ The four first parameters are from what you've gathered during the conversation,
       let options = {
           method: 'POST',
           uri: 'https://icl-booking.eu-gb.mybluemix.net/book',
-          body: {
-                payload: params
-            },
+          body: params,
           headers: {
               'User-Agent': 'Request-Promise'
           },
