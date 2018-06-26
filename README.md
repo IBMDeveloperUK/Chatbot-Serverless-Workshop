@@ -1,5 +1,7 @@
 # Workshop - Calling serverless functions from Watson Assistant 
 
+The slides are available here: [Slide deck](chatbot-serverless.pdf)
+
 ## Lab 1: Create a Watson Assistant dialog
 
 In this first lab, you'll create the base conversation for the workshop. We'll use the use case of booking a restaurant through a chatbot. 
