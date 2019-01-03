@@ -5,8 +5,8 @@ The slides are available here: [Slide deck](chatbot-serverless.pdf)
 ## Lab 1: Create a Watson Assistant dialog
 
 In this first lab, you'll create the base conversation for the workshop. We'll use the use case of booking a restaurant through a chatbot. 
-- If you feel like creating your own conversation, start [**here - Step 1**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
-- If you'd rather follow an example go straight to [**Step 2**](https://github.com/IBMCodeLondon/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
+- If you feel like creating your own conversation, start [**here - Step 1**](https://github.com/IBMDeveloperUK/chatbot-workshop/blob/master/training.md#step-1-optional-designing-your-bot)
+- If you'd rather follow an example go straight to [**Step 2**](https://github.com/IBMDeveloperUK/chatbot-workshop/blob/master/training.md#step-2-train-watson-assistant-service).
 
 Come back here when you're done!
 
@@ -35,7 +35,7 @@ Congrats, you now have a serverless function that says your table has been booke
 ## Lab 3: Call a serverless function from your Assistant
 
 Now, you've got a bit of chatbot and a bit of serverless function... let's connect them together! 
-![FUSION](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/giphy.gif?raw=true)
+![FUSION](https://github.com/IBMDeveloperUK/chatbot-serverless-workshop/blob/master/giphy.gif?raw=true)
 
 **Retrieve your Cloud Function service credentials**
 
@@ -56,9 +56,9 @@ Now, you've got a bit of chatbot and a bit of serverless function... let's conne
 
 1. Head back to the Dialog tab of your chatbot workspace
 2. Add your Cloud Function credentials as a context variable named `$private.my_credentials`:
-![botzero](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot0.gif?raw=true)
+![botzero](https://github.com/IBMDeveloperUK/chatbot-serverless-workshop/blob/master/bot0.gif?raw=true)
 3. Edit the response of the book_reservation node using the JSON editor
-![botone](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot1.gif?raw=true)
+![botone](https://github.com/IBMDeveloperUK/chatbot-serverless-workshop/blob/master/bot1.gif?raw=true)
 4. Replace with the following code snippet:
 ```json
 {
@@ -92,7 +92,7 @@ Then we're saving the return from the function in the `$function_returned` conte
 To check whether the call went through let's try to display the returned text.
 
 5. Add a child node to the book_reservation node and set its condition to true 
-![bottwo](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot2.gif?raw=true)
+![bottwo](https://github.com/IBMDeveloperUK/chatbot-serverless-workshop/blob/master/bot2.gif?raw=true)
 6. Edit the response using the JSON editor and add the following code that will retrieve the result from the function and display it:
 ```json
 {
@@ -106,7 +106,7 @@ To check whether the call went through let's try to display the returned text.
 }
 ```
 7. Open the book_reservation node and change the "And finally" condition to "Skip user input" so it automatically goes to the child node
-![botthree](https://github.com/IBMCodeLondon/chatbot-serverless-workshop/blob/master/bot3.gif?raw=true)
+![botthree](https://github.com/IBMDeveloperUK/chatbot-serverless-workshop/blob/master/bot3.gif?raw=true)
 8. Try it out! 
 
 Great! You've just mixed two worlds together, how does it feel? 
